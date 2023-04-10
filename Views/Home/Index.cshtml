@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Random Jokes";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div id="joke-container">
+    <p id="joke-text">@ViewBag.Joke</p>
+</div>
+
+<div id="joke-container">
+    <p id="joke-text">@ViewBag.Punchline</p>
+</div>
+
+
+@using (Html.BeginForm("Index", "Home"))
+{
+    <button type="submit">Next Joke</button>
+}
